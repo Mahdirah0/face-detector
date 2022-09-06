@@ -1,0 +1,11 @@
+{% extends 'index.html' %} {% block content %}
+<div>
+  <h1>hello world</h1>
+  {% if enable %}
+    <div class="image-section">
+      <img src="{{ url_for('face_detection_video') }}" ) width="50%" />
+    </div>
+  {% endif %}
+  <button>Activate</button>
+</div>
+{% endblock %}
